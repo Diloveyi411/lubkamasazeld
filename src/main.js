@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Add fade-in-up class to elements we want to animate
   const animatedElements = document.querySelectorAll(
-    '.hero-text, .hero-image-wrapper, .about-content, .about-image-wrapper, .quote-section, .service-card, .footer-top'
+    '.hero-text, .hero-image-wrapper, .about-content, .about-image-wrapper, .quote-section, .service-card, .contact-box'
   );
 
   animatedElements.forEach(el => {

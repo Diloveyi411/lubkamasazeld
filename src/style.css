@@ -387,54 +387,36 @@ p {
   margin-top: 60px;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  gap: 40px;
+.contact-box {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
 }
 
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.footer-logo-main {
-  font-family: var(--font-heading);
-  font-size: 1.4rem;
+.contact-title {
   color: var(--color-white);
-  letter-spacing: 0.08em;
-}
-
-.footer-logo-sub {
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  color: var(--color-accent-light);
-  margin-bottom: 8px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 .contact-intro {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.85rem;
-  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 40px;
 }
 
 .contact-details {
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  gap: 60px;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .contact-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
+  align-items: center;
+  gap: 6px;
 }
 
 .contact-label {
@@ -536,28 +518,49 @@ a.contact-value:hover {
 @media (max-width: 768px) {
 
   .hero-grid,
-  .about-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
 
   .nav-list {
     display: none;
-    /* Hide for now, JS handles toggle */
   }
 
   .mobile-menu-btn {
     display: block;
   }
 
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
   .hero-image-wrapper {
     order: -1;
-    /* Image on top on mobile */
-    height: 450px;
+    height: 380px;
+  }
+
+  .hero-img-main {
+    width: 85%;
+    height: 100%;
+  }
+
+  .hero-img-secondary {
+    width: 45%;
+    left: 0;
+    bottom: 20px;
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
   }
 
   .logo {
@@ -570,18 +573,66 @@ a.contact-value:hover {
     justify-content: space-between;
   }
 
-  .about-section,
+  .about-section {
+    margin: 20px 10px;
+    padding: 50px 20px;
+  }
+
+  .about-grid {
+    gap: 40px;
+  }
+
+  .about-img {
+    height: 380px;
+  }
+
   .quote-section {
     margin: 20px 10px;
-    padding: 60px 20px;
+    padding: 50px 20px;
   }
 
-  .newsletter-form {
+  .quote-text {
+    font-size: 1.4rem;
+  }
+
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .service-card {
+    padding: 30px 20px;
+  }
+
+  .contact-details {
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 
-  .newsletter-btn {
-    width: 100%;
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .hero-text,
+  .about-content,
+  .service-card {
+    text-align: center;
   }
 }
 
